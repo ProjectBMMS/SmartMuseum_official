@@ -9,11 +9,11 @@
     <Grid Background="#FF007FCD">
         <Button x:Name="Btn_Login" Content="Login" HorizontalAlignment="Left" Margin="252,113,0,0" VerticalAlignment="Top" Width="90" Height="30" Click="Btn_Login_Click"/>
         <TextBox x:Name="Txt_Username" HorizontalAlignment="Left" Height="30" Margin="22,46,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="320"/>
-        <TextBox x:Name="Txt_Password" HorizontalAlignment="Left" Height="31" Margin="22,112,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="225"/>
-        <Label Content="Non sei registrato?" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="22,165,0,0" Width="151" Height="33"/>
-        <Button Content="Registrati ora" HorizontalAlignment="Left" Margin="178,168,0,0" VerticalAlignment="Top" Width="164" Height="30"/>
+        <Label x:Name="Lbl_Register" Content="Non sei registrato?" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="22,165,0,0" Width="151" Height="33"/>
+        <Button x:Name="Btn_Register" Content="Registrati ora" HorizontalAlignment="Left" Margin="178,168,0,0" VerticalAlignment="Top" Width="164" Height="30" Click="Btn_Register_Click"/>
         <Label Content="username / email" HorizontalAlignment="Left" Margin="22,16,0,0" VerticalAlignment="Top" Height="30"/>
         <Label Content="password" HorizontalAlignment="Left" Margin="22,81,0,0" VerticalAlignment="Top" Height="37"/>
+        <PasswordBox x:Name="Pwd_Password" HorizontalAlignment="Left" Margin="22,113,0,0" VerticalAlignment="Top" Width="225" Height="30"/>
 
     </Grid>
 </Window>
