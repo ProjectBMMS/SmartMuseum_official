@@ -28,6 +28,7 @@ namespace Login
 
         private void Btn_Login_Click(object sender, RoutedEventArgs e)
         {
+            bool flag = true;
             string path = "registro.xml";
             XDocument xmlDoc = XDocument.Load(path);
             XElement xmlListaPersone = xmlDoc.Element("persone");
@@ -38,19 +39,25 @@ namespace Login
                 XElement xmlUsername = item.Element("username");
                 XElement xmlPassword = item.Element("password");
 
-                if (xmlUsername.Value == Txt_Username.Text || xmlEmail.Value == Txt_Username.Text && xmlPassword.Value == Pwd_Password.Password)
+                if (xmlUsername.Value == Txt_Username.Text && xmlPassword.Value == Pwd_Password.Password || xmlEmail.Value == Txt_Username.Text && xmlPassword.Value == Pwd_Password.Password)
                 {
                     Museo.MainWindow mainWindow = new Museo.MainWindow();
                     this.Close();
                     mainWindow.Show();
+                    flag = false;
                     break;
                 }
-                else
+                else if (xmlUsername.Value == Txt_Username.Text && xmlPassword.Value != Pwd_Password.Password || xmlEmail.Value == Txt_Username.Text && xmlPassword.Value != Pwd_Password.Password)
                 {
                     MessageBox.Show("Verifica la correttezza dei dati inseriti", "Attenzione", MessageBoxButton.OK, MessageBoxImage.Error);
                     Txt_Username.Focus();
+                    flag = false;
                     break;
                 }
+            }
+            if (flag)
+            {
+                MessageBox.Show("Non sei registrato? Registrati ora!", "Avviso", MessageBoxButton.OK, MessageBoxImage.Question);
             }
         }
 
