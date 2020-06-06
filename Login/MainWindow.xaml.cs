@@ -42,6 +42,7 @@ namespace Login
                 if (xmlUsername.Value == Txt_Username.Text && xmlPassword.Value == Pwd_Password.Password || xmlEmail.Value == Txt_Username.Text && xmlPassword.Value == Pwd_Password.Password)
                 {
                     Museo.MainWindow mainWindow = new Museo.MainWindow();
+                    MessageBox.Show($"Ciao {xmlUsername.Value}, goditi al meglio lo Smart Museum", "WELCOME", MessageBoxButton.OK, MessageBoxImage.Information);
                     this.Close();
                     mainWindow.Show();
                     flag = false;
