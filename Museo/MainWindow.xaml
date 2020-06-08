@@ -14,8 +14,8 @@
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         <ListBox x:Name="Lst_ListaOpere" HorizontalAlignment="Left" Height="341" VerticalAlignment="Top" Width="539" Margin="22,57,0,0" FontFamily="Sylfaen" FontSize="16"/>
-        <Button x:Name="Btn_ApriBrowser" Content="Apri sul browser" HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="150" Click="Btn_ApriBrowser_Click" Margin="225,20,0,0" Background="#FFE5E3C4"/>
-        <Button x:Name="Btn_Carica" Content="Visualizza Lista" HorizontalAlignment="Left" VerticalAlignment="Top" Width="150" Click="Btn_Carica_Click" Height="30" FontFamily="Sylfaen" FontSize="16" Margin="70,20,0,0" Background="#FFE5E3C4"/>
+        <Button x:Name="Btn_ApriBrowser" Content="Apri sul browser" HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="160" Click="Btn_ApriBrowser_Click" Margin="187,19,0,0" Background="#FFE5E3C4"/>
+        <Button x:Name="Btn_Carica" Content="Visualizza Lista" HorizontalAlignment="Left" VerticalAlignment="Top" Width="160" Click="Btn_Carica_Click" Height="30" FontFamily="Sylfaen" FontSize="16" Margin="22,20,0,0" Background="#FFE5E3C4"/>
         <Image HorizontalAlignment="Left" Height="273" Margin="601,126,0,0" VerticalAlignment="Top" Width="180" Source="Resources/QR_Code.png" Stretch="Fill"/>
         <Grid HorizontalAlignment="Left" Height="124" Margin="616,15,0,0" VerticalAlignment="Top" Width="152" Background="#FFE5E3C4">
             <Grid.ColumnDefinitions>
@@ -27,22 +27,7 @@
             <RadioButton x:Name="Opt_AutoreCrescente" Content="Autore ↑" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,63,0,0"/>
             <RadioButton x:Name="Opt_OperaDecrescente" Content="Opera ↓" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,35,0,0"/>
         </Grid>
-        <TextBox x:Name="Txt_Ricerca" HorizontalAlignment="Left" Height="30" Margin="380,20,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="181" Text="Ricerca opera o autore" Background="#FFE5E3C4" Foreground="#FF888888" TextChanged="Txt_Ricerca_TextChanged" MouseDoubleClick="Txt_Ricerca_MouseDoubleClick"/>
-        <Button x:Name="Btn_Back" Content="←" HorizontalAlignment="Left" VerticalAlignment="Top" Width="40" Height="25" FontFamily="Yu Gothic UI Semilight" FontSize="24" FontWeight="Bold" RenderTransformOrigin="0.5,0.5" BorderBrush="{x:Null}" Background="{x:Null}" Margin="22,20,0,0">
-            <Button.Foreground>
-                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="Red" Offset="0"/>
-                    <GradientStop Color="#FFEB9800" Offset="0.081"/>
-                    <GradientStop Color="#FFEAEB00" Offset="0.192"/>
-                    <GradientStop Color="#FF62FF00" Offset="0.293"/>
-                    <GradientStop Color="#FF00FFDF" Offset="0.443"/>
-                    <GradientStop Color="#FF005FFF" Offset="0.557"/>
-                    <GradientStop Color="#FF7D00FF" Offset="0.678"/>
-                    <GradientStop Color="#FFFF00E5" Offset="0.782"/>
-                    <GradientStop Color="Red" Offset="0.919"/>
-                </LinearGradientBrush>
-            </Button.Foreground>
-        </Button>
+        <TextBox x:Name="Txt_Ricerca" HorizontalAlignment="Left" Height="30" Margin="352,20,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="209" Text="Ricerca opera o autore" Background="#FFE5E3C4" Foreground="#FF888888" TextChanged="Txt_Ricerca_TextChanged" MouseDoubleClick="Txt_Ricerca_MouseDoubleClick"/>
 
     </Grid>
 </Window>
